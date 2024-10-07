@@ -8,12 +8,12 @@
 }
 
 .container {
-  width: 1500px;
+  width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.all, .card7 button, .card6 button, .card5 button, .main-btn, .nav-btn {
+.all, .card7 button, .card3 .card6 button, .card3 .card5 button, .main .main-btn, nav .nav-btn {
   width: 130px;
   height: 40px;
   border: none;
@@ -24,33 +24,30 @@
 nav {
   display: flex;
   justify-content: space-around;
+  gap: 150px;
   align-items: center;
   padding: 30px;
 }
-
-.nav-p {
+nav .nav-p {
   display: flex;
   width: 300px;
   justify-content: space-between;
 }
-
-.nav-p p {
+nav .nav-btn {
+  background-color: #FF7143;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: white;
+}
+nav .nav-p p {
   /* transition: 0.5s ; */
   cursor: pointer;
   padding-bottom: 10px;
   border: transparent solid;
 }
-
-.nav-p p:hover {
-  border-bottom: 3px solid blue;
-  color: blue;
-}
-
-.nav-btn {
-  background-color: #FF7143;
-  border-radius: 10px;
-  transition: 0.5s;
-  color: white;
+nav .nav-p p:hover {
+  border-bottom: 3px solid rgb(0, 0, 255);
+  color: rgb(255, 0, 0);
 }
 
 .nav-btn:hover {
@@ -59,61 +56,55 @@ nav {
 }
 
 .nav-btn:active:active {
-  transform: scale(0.9);
+  transform: scale(0.6);
 }
 
 .main {
   display: flex;
-  gap: 220px;
+  gap: 150px;
   padding-left: 160px;
   align-items: center;
   padding-bottom: 50px;
 }
-
-.main-title p {
+.main .main-title p {
   width: 400px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
-
-.main-btn {
+.main .main-btn {
   background-color: lawngreen;
   color: white;
   border-radius: 10px;
   transition: 0.5s;
 }
-
-.main-btn:hover {
+.main .main-btn:hover {
   background-color: red;
   color: white;
 }
-
-.main-btn:active {
-  transform: scale(0.9);
+.main .main-btn:hover:active {
+  transform: scale(0.6);
 }
-
-.main-b {
+.main .main-b {
   display: flex;
   gap: 30px;
 }
-
-.main-b img {
+.main .main-b img {
   width: 40px;
   height: 40px;
 }
-
-.main-title h1 {
+.main .main-title h1 {
   width: 400px;
   font-size: 45px;
   margin-bottom: 10px;
 }
-
-.main-title p {
-  margin-bottom: 50px;
+.main title p {
+  margin-bottom: 30px;
 }
 
 .main-logo {
   display: flex;
-  justify-content: space-around;
-  padding-left: 50px;
+  justify-content: center;
+  gap: 150px;
 }
 
 .page2-title p {
@@ -148,8 +139,7 @@ nav {
   padding-top: 80px;
   align-items: center;
 }
-
-.card1 p {
+.cards .card1 p {
   width: 300px;
 }
 
@@ -164,45 +154,57 @@ nav {
   align-items: center;
   padding-left: 180px;
 }
-
 .hore h1 {
   font-size: 50px;
   width: 450px;
 }
-
-.hore-btn {
+.hore .hore-btn {
   width: 200px;
   height: 60px;
   background-color: lightgrey;
   color: blue;
   border: none;
 }
-
-.hore-btn1 {
+.hore .hore-btn:hover {
+  background-color: #4353ff;
+  color: aliceblue;
+}
+.hore .hore-btn:active {
+  background-color: rgb(255, 0, 0);
+  transition: 1s;
+}
+.hore .hore-btn1 {
   width: 200px;
   height: 60px;
   background-color: blue;
   color: white;
   border: none;
 }
+.hore .hore-btn1:hover {
+  background-color: #ffa743;
+  color: aliceblue;
+  transition: 0.3s;
+}
+.hore .hore-btn1:active {
+  background-color: aqua;
+  transition: 1s;
+}
 
 .card3 {
   display: flex;
   /* gap: 4   0px; */
   padding-top: 60px;
+  gap: 10px;
   padding-left: 300px;
   padding-bottom: 30px;
 }
-
-span {
+.card3 span {
   font-size: 20px;
 }
-
-.card5 h1 {
+.card3 h1 {
   font-size: 60px;
 }
-
-.card5 {
+.card3 .card5 {
   margin-top: 40px;
   font-size: 30px;
   background-color: lightgrey;
@@ -211,36 +213,33 @@ span {
   text-align: center;
   cursor: pointer;
 }
-
-.card5:hover {
+.card3 .card5:hover {
   background-color: blue;
   color: white;
   transition: 1.2s;
-  transform: scale(1.08);
+  transform: scale(1.09);
   box-shadow: 0px 0px 30px dodgerblue;
+  cursor: pointer;
 }
-
-.card6 {
+.card3 .card6 {
   margin-top: 40px;
   font-size: 30px;
-  background-color: lightgrey;
+  background-color: orangered;
   padding: 70px;
+  transform: scale(1.08);
   border-radius: 10px;
   /* margin-bottom: 50px; */
   /* padding-top: 70px; */
   text-align: center;
-  transition: 0.5s all;
 }
-
-.card6:hover {
+.card3 .card6:hover {
   background-color: orangered;
   color: white;
   transition: 1.2s;
-  transform: scale(1.08);
+  transform: scale(1.09);
   box-shadow: 0px 0px 30px orangered;
 }
-
-.card7 {
+.card3 .card7 {
   margin-top: 40px;
   font-size: 30px;
   background-color: lightgrey;
@@ -250,49 +249,42 @@ span {
   transition: 0.3s;
   cursor: pointer;
 }
-
-.card7:hover {
+.card3 .card7:hover {
   background-color: blue;
   color: white;
   transition: 1.2s;
-  transform: scale(1.08);
+  transform: scale(1.09);
   box-shadow: 0px 0px 30px dodgerblue;
   cursor: pointer;
 }
-
-.card5 button {
+.card3 .card5 button {
   margin-top: 40px;
   color: blue;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
 }
-
-.card5 button:hover {
+.card3 .card5 button:hover {
   background-color: orangered;
   color: white;
 }
-
-.card5 button:active {
-  transform: scale(0.9);
+.card3 .card5 button:hover:active {
+  transform: scale(0.6);
 }
-
-.card6 button {
+.card3 .card6 button {
   margin-top: 40px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: blue;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
 }
-
-.card6 button:hover {
+.card3 .card6 button:hover {
   background-color: blue;
   color: white;
 }
-
-.card6 button:active {
-  transform: scale(0.9);
+.card3 .card6 button:hover:active {
+  transform: scale(0.6);
 }
 
 .card7 button {
@@ -302,12 +294,10 @@ span {
   cursor: pointer;
   transition: 0.5s;
 }
-
 .card7 button:hover {
   background-color: orangered;
   color: white;
 }
-
 .card7 button:active {
-  transform: scale(0.9);
+  transform: scale(0.6);
 }/*# sourceMappingURL=main.css.map */

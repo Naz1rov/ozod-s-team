@@ -5,7 +5,7 @@
     user-select: none;
 }
 .container{
-    width: 1500px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -21,86 +21,91 @@
 nav{
     display: flex;
     justify-content: space-around;
+    gap: 150px;
     align-items: center;
     padding: 30px;
 
-}
-.nav-p{
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-}
-.nav-p p{
-    /* transition: 0.5s ; */
-    cursor: pointer;
-    padding-bottom: 10px;
-    border: transparent solid;
-}
-.nav-p p:hover{
-    border-bottom: 3px solid blue;
-    color: blue;
-}
-.nav-btn{
-    @extend .all;
-    background-color:  #FF7143;
-    border-radius: 10px;
-    transition: 0.5s;
-    color: white;
+    .nav-p{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+    .nav-btn{
+        @extend .all;
+        background-color:  #FF7143;
+        border-radius: 10px;
+        transition: 0.5s;
+        color: white;
+    }
+    .nav-p p{
+        /* transition: 0.5s ; */
+        cursor: pointer;
+        padding-bottom: 10px;
+        border: transparent solid;
+        &:hover{
+            border-bottom: 3px solid rgb(0, 0, 255);
+            color: rgb(255, 0, 0);
+        }
+    }
 }
 .nav-btn:hover{
     background: orangered;
     color: white;
 }
 .nav-btn:active:active{
-    transform: scale(0.9);
+    transform: scale(0.6);
 }
 .main{
     display: flex;
-    gap: 220px;
+    gap: 150px;
     padding-left: 160px;
     align-items: center;
     padding-bottom: 50px;
-}
-.main-title p {
-    width: 400px;
-}
-.main-btn{
-    @extend .all;
-    background-color: lawngreen;
-    color: white;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-.main-btn:hover{
-    background-color: red;
-    color: white;
-
-}
-.main-btn:active{
-    transform: scale(0.9);
-}
-.main-b{
-    display: flex; 
-    gap: 30px; 
-}
-.main-b img{
-   width: 40px;
-   height: 40px;
-
-}
-.main-title h1{
-    width: 400px;
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-.main-title p{
+    .main-title p {
+        width: 400px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .main-btn{
+        @extend .all;
+        background-color: lawngreen;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+        &:hover{
+            background-color: red;
+            color: white;
+            &:active{
+                transform: scale(0.6);
+            }
+        
+        }
+    }
+    .main-b{
+        display: flex; 
+        gap: 30px; 
+       
+    }
+    .main-b img{
+       width: 40px;
+       height: 40px;
     
-    margin-bottom: 50px;
+    }
+    .main-title h1{
+        width: 400px;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    title p{
+        
+        margin-bottom: 30px;
+    }
 }
 .main-logo{
     display: flex;
-    justify-content: space-around;
-    padding-left: 50px;
+    justify-content: center;
+    gap: 150px;
+   
 
 
 }
@@ -131,10 +136,10 @@ nav{
     padding-left: 180px;
     padding-top: 80px;
     align-items: center;    
-}
-.card1 p{
-    width: 300px;
-
+    .card1 p{
+        width: 300px;
+    
+    }
 }
 .card1{
     text-align: center;
@@ -145,128 +150,150 @@ nav{
     padding-top: 40px;
     align-items: center;
     padding-left: 180px;
-}
-.hore h1{
-    font-size: 50px;
-    width: 450px;
-}
-.hore-btn{
-    width: 200px;
-    height: 60px;
-    background-color: lightgrey;
-    color: blue;
-    border: none;
+     h1{
+        font-size: 50px;
+        width: 450px;
+    }
+    .hore-btn{
+        width: 200px;
+        height: 60px;
+        background-color: lightgrey;
+        color: blue;
+        border: none;
+        &:hover{
+            background-color: #4353ff;
+            color: aliceblue;
+        }
+        &:active{
+            background-color: rgb(255, 0, 0);
+            transition:1s;
+        }
+    }
+    .hore-btn1{
+        width: 200px;
+        height: 60px;
+        background-color: blue;
+        color: white;
+        border: none;
+        &:hover{
+            background-color: #ffa743;
+            color: aliceblue;
+            transition:0.3s;
+
+        }
+        &:active{
+            background-color: aqua;
+            transition:1s;
+        }
+    }
 }
 
-.hore-btn1{
-    width: 200px;
-    height: 60px;
-    background-color: blue;
-    color: white;
-    border: none;
-}
 .card3{
     display: flex;
     /* gap: 4   0px; */
     padding-top: 60px;
+    gap: 10px;
     padding-left: 300px;
     padding-bottom: 30px;
 
-}
-span{
-    font-size: 20px;
-
-}
-.card5 h1{
-    font-size: 60px;
-}
-.card5{
-    margin-top: 40px;
-    font-size: 30px;
-    background-color: lightgrey;
-    padding: 70px;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.card5:hover{
-    background-color: blue;
-    color: white;
-    transition:     1.2s;
-    transform: scale(1.08);
-    box-shadow: 0px 0px 30px dodgerblue;
-}
-.card6{
-    margin-top: 40px;
-    font-size: 30px;
-    background-color: lightgrey;
-    padding: 70px;
-    border-radius: 10px;
-    /* margin-bottom: 50px; */
-    /* padding-top: 70px; */
-    text-align: center;
-    transition: 0.5s all;
-}
-.card6:hover{
-     background-color: orangered;
-     color: white;
-     transition: 1.2s;
-    transform: scale(1.08);
-    box-shadow: 0px 0px 30px orangered;
-
-
+    span{
+        font-size: 20px;
+    
+    }
+     h1{
+        font-size: 60px;
+    }
+    .card5{
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: lightgrey;
+        padding: 70px;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background-color: blue;
+            color: white;
+            transition: 1.2s;
+            transform: scale(1.09);
+            box-shadow: 0px 0px 30px dodgerblue;
+            cursor: pointer;
+        }
+    }
+    .card6{
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: orangered;
+        padding: 70px;
+        transform: scale(1.08);
+        border-radius: 10px;
+        /* margin-bottom: 50px; */
+        /* padding-top: 70px; */
+        text-align: center;
+        // transition: 0.s all;
+        &:hover{
+             background-color: orangered;
+             color: white;
+             transition: 1.2s;
+            transform: scale(1.09);
+            box-shadow: 0px 0px 30px orangered;
+        
+        
+             
+        }
+    }
+    .card7{
+        margin-top: 40px;
+        font-size: 30px;
+        background-color: lightgrey;
+        padding: 70px;
+        border-radius: 10px;
+        text-align: center;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            background-color: blue;
+            color: white;
+            transition: 1.2s;
+            transform: scale(1.09);
+            box-shadow: 0px 0px 30px dodgerblue;
+            cursor: pointer;
+        }
      
-}
-.card7{
-    margin-top: 40px;
-    font-size: 30px;
-    background-color: lightgrey;
-    padding: 70px;
-    border-radius: 10px;
-    text-align: center;
-    transition: .3s;
-    cursor: pointer;
-}
-
-.card7:hover{
-    background-color: blue;
-    color: white;
-    transition: 1.2s;
-    transform: scale(1.08);
-    box-shadow: 0px 0px 30px dodgerblue;
-    cursor: pointer;
-}
-.card5 button{
-    @extend .all;
-    margin-top: 40px;
-    color: blue;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.card5 button:hover {
-    background-color: orangered;
-    color: white;
-}
-.card5 button:active {
-    transform:scale(0.9) ;
-}
-.card6 button{
-   @extend .all;
-    margin-top: 40px;
-    background-color: white;
-    color: blue;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.card6 button:hover{
-    background-color: blue;
-    color: white;
-}
-.card6 button:active{
-    transform: scale(0.9);
+    }
+    
+    .card5 button{
+        @extend .all;
+        margin-top: 40px;
+        color: blue;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background-color: orangered;
+            color: white;
+            &:active {
+                transform:scale(0.6) ;
+            }
+        }
+    }
+    .card6 button{
+       @extend .all;
+        margin-top: 40px;
+        background-color: rgb(255, 255, 255);
+        color: blue;
+        border-radius: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+        
+        &:hover{
+            background-color: blue;
+            color: white;
+            &:active{
+                transform: scale(0.6);
+            }
+        }
+    }
 }
 
 
@@ -278,12 +305,12 @@ span{
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
+    &:hover{
+        background-color: orangered;
+        color: white;
+    }
+    &:active{
+        transform: scale(0.6);
+    }
 }
-.card7 button:hover{
-    background-color: orangered;
-    color: white;
-}
-.card7 button:active{
-    transform: scale(0.9);
-}
-
+// medyani boshlanishi///////////////////////////////////////
