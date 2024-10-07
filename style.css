@@ -9,15 +9,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-.all{
-    width: 130px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -41,11 +32,14 @@ nav{
     color: blue;
 }
 .nav-btn{
-    @extend .all;
     background-color:  #FF7143;
+    width: 130px;
+    height: 40px;
+    border: none;
     border-radius: 10px;
     transition: 0.5s;
     color: white;
+    cursor: pointer;
 }
 .nav-btn:hover{
     background: orangered;
@@ -65,9 +59,11 @@ nav{
     width: 400px;
 }
 .main-btn{
-    @extend .all;
+    width: 100px;
+    height: 40px;
     background-color: lawngreen;
     color: white;
+    border: none ;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -238,9 +234,11 @@ span{
     cursor: pointer;
 }
 .card5 button{
-    @extend .all;
+    width: 120px;
+    height: 40px;
     margin-top: 40px;
     color: blue;
+    border: none;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
@@ -253,10 +251,12 @@ span{
     transform:scale(0.9) ;
 }
 .card6 button{
-   @extend .all;
+    width: 120px;
+    height: 40px;
     margin-top: 40px;
     background-color: white;
     color: blue;
+    border: none;
     border-radius: 10px;
     transition: 0.5s;
     cursor: pointer;
@@ -272,9 +272,11 @@ span{
 
 
 .card7 button{
-    @extend .all;
+    width: 120px;
+    height: 40px;
     margin-top: 40px;
     color: blue;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.5s;
